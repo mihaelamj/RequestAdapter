@@ -9,7 +9,7 @@ Request adapter for URL requests from "MovieLister" demo app (Swift for Good boo
 
 ## Usage 
 
-### 3. Implement the desired functionality inside the adapter protocol methods
+### 1. Implement the desired functionality inside the adapter protocol methods
 
 ```swift
 struct UserAuthAdapter : RequestAdapter {
