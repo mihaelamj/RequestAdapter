@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - Adapter Protocol -
 
-public protocol RequestAdapter {
+public protocol Adapter {
   func modify(_ request: inout URLRequest)
   func beforeSend(_ request: URLRequest?)
   func onResponse(response: URLResponse?, data: Data?)
@@ -19,7 +19,7 @@ public protocol RequestAdapter {
 
 // MARK: - Default (empty) Implementations for Adapter Protocol Methods (for compiler to stay silent) -
 
-public extension RequestAdapter {
+public extension Adapter {
   func modify(_ request: inout URLRequest) { }
   func beforeSend(_ request: URLRequest?) { }
   func onResponse(response: URLResponse?, data: Data?) { }

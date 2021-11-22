@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct LogAdapter : RequestAdapter {
+public struct LogAdapter : Adapter {
   
   public enum LogLevel : Int {
     case none
